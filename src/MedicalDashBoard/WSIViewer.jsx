@@ -203,7 +203,7 @@ const WSIViewer = () => {
                   <TransformComponent>
                   <div className="relative">
                       <img
-                        src="/public/image1.png"
+                        src="/image1.png"
                         alt="WSI"
                         className="w-full h-auto rounded-lg shadow"
                       />
@@ -245,7 +245,7 @@ const WSIViewer = () => {
             <div className="col-span-1 text-center border-2 border-black  rounded-sm p-10 shadow-md">
               <div className="relative w-full h-40 flex justify-center items-center">
                 <img
-                  src="/public/image1.png"
+                  src="/image1.png"
                   alt="Zoomed Out Preview"
                   className="w-40 h-40 object-cover rounded-md border"
                 />
