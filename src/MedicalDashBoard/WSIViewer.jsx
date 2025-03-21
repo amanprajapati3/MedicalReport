@@ -68,21 +68,22 @@ const WSIViewer = () => {
 
   return (
     <>
-      <div className="m-auto mt-12 container p-3 justify-center border-[3px] border-black rounded-[80px] ">
-        <div className="border-b-2 border-black text-xl flex justify-center">
+     <div className=" mt-12 text-[15px] md:mx-5 lg:mx-20 mb-10 flex p-3 justify-center border-[3px] border-black rounded-[80px] ">
+        <div>
+        <div className="border-b-2  border-black text-[17px] flex justify-center">
           {currentTime}
         </div>
-        <button className="text-4xl mt-2 px-4 py-2 ml-8 border-2 border-black hover:cursor-pointer hover:text-white hover:bg-black transition-all duration-400 active:text-black active:bg-white">
+        <button className="text-2xl mt-2 px-4 py-2 ml-8 border-2 border-black hover:cursor-pointer hover:text-white hover:bg-black transition-all duration-400 active:text-black active:bg-white">
           <FaArrowLeftLong />
         </button>
-        <div className="grid gap-2 grid-cols-4 pl-10">
+        <div className="grid gap-2 grid-cols-4 pl-4">
           {/* Left Panel */}
           <div>
             <div
               className="col-span-1 text-center rounded-xl shadow-md shadow-gray h-[210px] overflow-y-scroll"
               id="slider"
             >
-              <table className="w-full mt-2 border-collapse border border-gray-300">
+              <table className="w-full text-sm mt-2 border-collapse border border-gray-300">
                 <thead>
                   <tr className="bg-green-300">
                     <th className="border p-2">RBC</th>
@@ -169,7 +170,7 @@ const WSIViewer = () => {
               className="col-span-1 text-center shadow-md shadow-gray overflow-y-scroll -mt-5"
               id="slider"
             >
-              <h1 className="text-center text-xl bg-green-300  font-semibold">
+              <h1 className="text-center bg-green-300  font-bold">
                 Platelet
               </h1>
               <table className="w-full border-collapse border border-gray-300">
@@ -259,7 +260,7 @@ const WSIViewer = () => {
                   }}
                 ></div>
               </div>
-              <span className="flex justify-between mt-1 px-12 border-t-2 py-1">
+              <span className="flex justify-center gap-5 mt-1 px-12 border-t-2 py-1">
                 <h1 className="text-center">Patient ID</h1>
                 <h1 className="text-center">Blood</h1>
               </span>
@@ -273,6 +274,7 @@ const WSIViewer = () => {
               </center>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </>
